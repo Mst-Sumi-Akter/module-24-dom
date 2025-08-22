@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header>
+        <h1>This is my header no banner</h1>
+    </header>
+    <main id="main-container">
+        <section id="old-dhaka" class="songs">
+            <h1>Welcome to my DOM</h1>
+            <p>
+                Lorem ipsum dolor <span>oli goli</span> amet consectetur adipisicing elit. <span>Alias</span>, temporibus!
+            </p>
+            <h1>asdf asdf <span>Some text</span> </h1>
+            <ul>
+                <li>Shafayet</li>
+                <li class="foreign">Bonobash</li>
+                <li id="band" class="">Jalali Set</li>
+                <li class="international">Dubai</li>
+                <li>Dom De re baba</li>
+            </ul>
+        </section>
+    <script>
+        console.log('Hello From javaScript')
+        console.log('Hello bole chole galo')
+        console.log('Document object model')
+        const student = {
+            name: 'Abul Mia',
+            id: 121,
+            study: function (subject){
+                console.log('studying subject: ', subject);
+            }
+
+        }
+        
+        // document.getElementsByTagName
+
+        const liCollection = document.getElementsByTagName('li');
+          console.log(liCollection);
+        for (const li of liCollection) {
+              console.log(li.innerText)
+        }
+        // all h1 tags
+        const allHeadings = document.getElementsByTagName('h1');
+        for ( const heading of allHeadings){
+            console.log(heading.innerText)
+        }
+
+
+    </script>
+    <script src="js/hello.js"></script>
+</body>
+</html>
